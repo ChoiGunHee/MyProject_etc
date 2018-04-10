@@ -1,0 +1,26 @@
+Filebench Version 1.4.9.1
+24427: 0.000: Allocated 170MB of shared memory
+filebench> filebench> 24427: 0.001: Createfiles Version 3.0 personality successfully loaded
+24427: 0.001: Usage: set $dir=<dir>          defaults to /home/workspace/gunhee/testMemp5m
+24427: 0.001:        set $meanfilesize=<size>    defaults to 16384
+24427: 0.001:        set $iosize=<size>      defaults to 1048576
+24427: 0.001:        set $nfiles=<value>     defaults to 100000
+24427: 0.001:        set $nthreads=<value>   defaults to 16
+24427: 0.001:        set $meandirwidth=<size> defaults to 100
+24427: 0.001:        run
+filebench> 24427: 0.001: Creating/pre-allocating files and filesets
+24427: 0.089: Fileset bigfileset: 100000 files, 0 leafdirs, avg dir width = 100, avg dir depth = 2.5, 1562.995MB
+24427: 0.090: Removed any existing fileset bigfileset in 1 seconds
+24427: 0.090: Creating fileset bigfileset...
+24427: 0.269: Preallocated 0 of 100000 of fileset bigfileset in 1 seconds
+24427: 0.269: waiting for fileset pre-allocation to finish
+24431: 0.269: Starting 1 filecreate instances
+24432: 0.270: Starting 16 filecreatethread threads
+24427: 1.291: Running...
+24427: 11.292: Run took 10 seconds...
+24427: 11.293: Per-Operation Breakdown
+closefile1           99991ops     9998ops/s   0.0mb/s      0.0ms/op      691us/op-cpu [0ms - 0ms]
+writefile1           99996ops     9999ops/s 156.2mb/s      0.0ms/op      840us/op-cpu [0ms - 1ms]
+createfile1          100000ops     9999ops/s   0.0mb/s      0.0ms/op      863us/op-cpu [0ms - 6ms]
+24427: 11.293: IO Summary: 299987 ops, 29996.249 ops/s, (0/9999 r/w), 156.2mb/s,    299us cpu/op,   0.1ms latency
+24427: 11.293: Shutting down processes

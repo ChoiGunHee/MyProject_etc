@@ -1,0 +1,25 @@
+Filebench Version 1.4.9.1
+22020: 0.000: Allocated 170MB of shared memory
+filebench> filebench> 22020: 0.001: Random Write Version 3.0 personality successfully loaded
+22020: 0.001: Usage: set $dir=<dir>         defaults to /home/workspace/gunhee/testMemp5m
+22020: 0.001:        set $filesize=<size>   defaults to 1073741824
+22020: 0.001:        set $iosize=<value>    defaults to 8192
+22020: 0.001:        set $nthreads=<value>  defaults to 1
+22020: 0.001:        set $workingset=<value>  defaults to 0
+22020: 0.001:        set $directio=<bool>   defaults to 0
+22020: 0.001:        run runtime (e.g. run 60)
+filebench> 22020: 0.001: Creating/pre-allocating files and filesets
+22020: 0.001: File largefile1: 1024.000MB
+22020: 0.003: Removed any existing file largefile1 in 1 seconds
+22020: 0.003: making tree for filset /home/workspace/gunhee/testMemp5m/largefile1
+22020: 0.003: Creating file largefile1...
+22020: 0.236: Preallocated 1 of 1 of file largefile1 in 1 seconds
+22020: 0.236: waiting for fileset pre-allocation to finish
+22025: 0.236: Starting 1 rand-write instances
+22026: 0.237: Starting 1 rand-thread threads
+22020: 1.237: Running...
+22020: 601.300: Run took 600 seconds...
+22020: 601.300: Per-Operation Breakdown
+rand-write1          15939289ops    26563ops/s 207.5mb/s      0.0ms/op       20us/op-cpu [0ms - 0ms]
+22020: 601.300: IO Summary: 15939289 ops, 26562.727 ops/s, (0/26563 r/w), 207.5mb/s,     38us cpu/op,   0.0ms latency
+22020: 601.300: Shutting down processes

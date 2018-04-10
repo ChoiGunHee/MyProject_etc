@@ -1,0 +1,60 @@
+Filebench Version 1.4.9.1
+22374: 0.000: Allocated 170MB of shared memory
+filebench> filebench> 22374: 0.001: Web-server Version 3.0 personality successfully loaded
+22374: 0.001: Usage: set $dir=<dir>
+22374: 0.001:        set $meanfilesize=<size>   defaults to 16384
+22374: 0.001:        set $nfiles=<value>    defaults to 10000
+22374: 0.001:        set $meandirwidth=<value>  defaults to 20
+22374: 0.001:        set $nthreads=<value>  defaults to 100
+22374: 0.001:        set $iosize=<size>     defaults to 1048576
+22374: 0.001:        run runtime (e.g. run 60)
+filebench> 22374: 0.001: Creating/pre-allocating files and filesets
+22374: 0.001: Fileset logfiles: 1 files, 0 leafdirs, avg dir width = 20, avg dir depth = 0.0, 0.002MB
+22374: 0.003: Removed any existing fileset logfiles in 1 seconds
+22374: 0.003: making tree for filset /home/workspace/gunhee/testMemp5m/logfiles
+22374: 0.003: Creating fileset logfiles...
+22374: 0.004: Preallocated 1 of 1 of fileset logfiles in 1 seconds
+22374: 0.013: Fileset bigfileset: 10000 files, 0 leafdirs, avg dir width = 20, avg dir depth = 3.1, 155.184MB
+22374: 0.014: Removed any existing fileset bigfileset in 1 seconds
+22374: 0.014: making tree for filset /home/workspace/gunhee/testMemp5m/bigfileset
+22374: 0.077: Creating fileset bigfileset...
+22374: 0.859: Preallocated 10000 of 10000 of fileset bigfileset in 1 seconds
+22374: 0.859: waiting for fileset pre-allocation to finish
+22380: 0.859: Starting 1 filereader instances
+22381: 0.860: Starting 100 filereaderthread threads
+22374: 1.972: Running...
+22374: 602.022: Run took 600 seconds...
+22374: 602.174: Per-Operation Breakdown
+appendlog            446220ops      744ops/s   5.8mb/s      0.1ms/op     6014us/op-cpu [0ms - 19ms]
+closefile10          446122ops      743ops/s   0.0mb/s      0.0ms/op     5613us/op-cpu [0ms - 4ms]
+readfile10           446124ops      743ops/s  11.5mb/s      0.0ms/op     5775us/op-cpu [0ms - 16ms]
+openfile10           446131ops      743ops/s   0.0mb/s      0.1ms/op     6088us/op-cpu [0ms - 19ms]
+closefile9           446131ops      743ops/s   0.0mb/s      0.0ms/op     5626us/op-cpu [0ms - 4ms]
+readfile9            446135ops      743ops/s  11.5mb/s      0.0ms/op     5784us/op-cpu [0ms - 18ms]
+openfile9            446141ops      744ops/s   0.0mb/s      0.1ms/op     6091us/op-cpu [0ms - 18ms]
+closefile8           446143ops      744ops/s   0.0mb/s      0.0ms/op     5645us/op-cpu [0ms - 4ms]
+readfile8            446145ops      744ops/s  11.5mb/s      0.0ms/op     5787us/op-cpu [0ms - 12ms]
+openfile8            446149ops      744ops/s   0.0mb/s      0.1ms/op     6072us/op-cpu [0ms - 18ms]
+closefile7           446149ops      744ops/s   0.0mb/s      0.0ms/op     5637us/op-cpu [0ms - 4ms]
+readfile7            446157ops      744ops/s  11.5mb/s      0.0ms/op     5794us/op-cpu [0ms - 23ms]
+openfile7            446160ops      744ops/s   0.0mb/s      0.1ms/op     6084us/op-cpu [0ms - 20ms]
+closefile6           446162ops      744ops/s   0.0mb/s      0.0ms/op     5624us/op-cpu [0ms - 3ms]
+readfile6            446167ops      744ops/s  11.5mb/s      0.0ms/op     5775us/op-cpu [0ms - 13ms]
+openfile6            446168ops      744ops/s   0.0mb/s      0.1ms/op     6071us/op-cpu [0ms - 13ms]
+closefile5           446170ops      744ops/s   0.0mb/s      0.0ms/op     5621us/op-cpu [0ms - 4ms]
+readfile5            446174ops      744ops/s  11.5mb/s      0.0ms/op     5779us/op-cpu [0ms - 16ms]
+openfile5            446178ops      744ops/s   0.0mb/s      0.1ms/op     6088us/op-cpu [0ms - 20ms]
+closefile4           446178ops      744ops/s   0.0mb/s      0.0ms/op     5629us/op-cpu [0ms - 4ms]
+readfile4            446181ops      744ops/s  11.5mb/s      0.0ms/op     5774us/op-cpu [0ms - 23ms]
+openfile4            446181ops      744ops/s   0.0mb/s      0.1ms/op     6089us/op-cpu [0ms - 18ms]
+closefile3           446182ops      744ops/s   0.0mb/s      0.0ms/op     5635us/op-cpu [0ms - 4ms]
+readfile3            446187ops      744ops/s  11.6mb/s      0.0ms/op     5781us/op-cpu [0ms - 14ms]
+openfile3            446188ops      744ops/s   0.0mb/s      0.1ms/op     6070us/op-cpu [0ms - 18ms]
+closefile2           446188ops      744ops/s   0.0mb/s      0.0ms/op     5632us/op-cpu [0ms - 5ms]
+readfile2            446193ops      744ops/s  11.6mb/s      0.0ms/op     5778us/op-cpu [0ms - 16ms]
+openfile2            446195ops      744ops/s   0.0mb/s      0.1ms/op     6088us/op-cpu [0ms - 13ms]
+closefile1           446199ops      744ops/s   0.0mb/s      0.0ms/op     5635us/op-cpu [0ms - 4ms]
+readfile1            446210ops      744ops/s  11.5mb/s      0.0ms/op     5726us/op-cpu [0ms - 15ms]
+openfile1            446211ops      744ops/s   0.0mb/s      0.1ms/op     6114us/op-cpu [0ms - 18ms]
+22374: 602.174: IO Summary: 13831219 ops, 23050.173 ops/s, (7436/744 r/w), 121.2mb/s,    330us cpu/op,   0.1ms latency
+22374: 602.174: Shutting down processes

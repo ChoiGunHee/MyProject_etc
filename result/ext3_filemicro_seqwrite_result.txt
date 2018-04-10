@@ -1,0 +1,27 @@
+Filebench Version 1.4.9.1
+ 3465: 0.000: Allocated 170MB of shared memory
+filebench> filebench>  3465: 0.001: FileMicro-SeqWrite Version 2.2 personality successfully loaded
+ 3465: 0.001: Usage: set $dir=<dir>
+ 3465: 0.001:        set $cached=<bool>    defaults to false
+ 3465: 0.001:        set $count=<value>    defaults to 1024
+ 3465: 0.001:        set $iosize=<size>    defaults to 1048576
+ 3465: 0.001:        set $nthreads=<value> defaults to 1
+ 3465: 0.001:        set $sync=<bool>      defaults to false
+ 3465: 0.001:  
+ 3465: 0.001:        run runtime (e.g. run 60)
+filebench>  3465: 0.001: Creating/pre-allocating files and filesets
+ 3465: 0.001: File bigfile: 0.000MB
+ 3465: 0.003: Removed any existing file bigfile in 1 seconds
+ 3465: 0.003: making tree for filset /home/workspace/gunhee/testMemp5m/bigfile
+ 3465: 0.003: Creating file bigfile...
+ 3465: 0.003: Preallocated 1 of 1 of file bigfile in 1 seconds
+ 3465: 0.003: waiting for fileset pre-allocation to finish
+ 3469: 0.003: Starting 1 filewriter instances
+ 3470: 0.004: Starting 1 filewriterthread threads
+ 3465: 1.004: Running...
+ 3465: 3.005: Run took 2 seconds...
+ 3465: 3.005: Per-Operation Breakdown
+finish               1ops        0ops/s   0.0mb/s      0.0ms/op        0us/op-cpu [0ms - 0ms]
+write-file           1025ops      512ops/s 511.9mb/s      1.1ms/op     1112us/op-cpu [0ms - 1ms]
+ 3465: 3.005: IO Summary:  1025 ops, 512.434 ops/s, (0/512 r/w), 511.9mb/s,   1132us cpu/op,   1.1ms latency
+ 3465: 3.005: Shutting down processes

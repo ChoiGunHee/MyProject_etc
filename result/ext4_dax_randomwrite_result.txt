@@ -1,0 +1,25 @@
+Filebench Version 1.4.9.1
+24527: 0.000: Allocated 170MB of shared memory
+filebench> filebench> 24527: 0.001: Random Write Version 3.0 personality successfully loaded
+24527: 0.001: Usage: set $dir=<dir>         defaults to /home/workspace/gunhee/testMemp5m
+24527: 0.001:        set $filesize=<size>   defaults to 1073741824
+24527: 0.001:        set $iosize=<value>    defaults to 8192
+24527: 0.001:        set $nthreads=<value>  defaults to 1
+24527: 0.001:        set $workingset=<value>  defaults to 0
+24527: 0.001:        set $directio=<bool>   defaults to 0
+24527: 0.001:        run runtime (e.g. run 60)
+filebench> 24527: 0.001: Creating/pre-allocating files and filesets
+24527: 0.001: File largefile1: 1024.000MB
+24527: 0.003: Removed any existing file largefile1 in 1 seconds
+24527: 0.003: making tree for filset /home/workspace/gunhee/testMemp5m/largefile1
+24527: 0.003: Creating file largefile1...
+24527: 0.240: Preallocated 1 of 1 of file largefile1 in 1 seconds
+24527: 0.240: waiting for fileset pre-allocation to finish
+24532: 0.240: Starting 1 rand-write instances
+24533: 0.245: Starting 1 rand-thread threads
+24527: 1.245: Running...
+24527: 601.305: Run took 600 seconds...
+24527: 601.305: Per-Operation Breakdown
+rand-write1          16380695ops    27298ops/s 213.3mb/s      0.0ms/op       19us/op-cpu [0ms - 0ms]
+24527: 601.305: IO Summary: 16380695 ops, 27298.452 ops/s, (0/27298 r/w), 213.3mb/s,     37us cpu/op,   0.0ms latency
+24527: 601.305: Shutting down processes

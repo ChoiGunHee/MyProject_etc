@@ -1,0 +1,25 @@
+Filebench Version 1.4.9.1
+22604: 0.000: Allocated 170MB of shared memory
+filebench> filebench> 22604: 0.001: Random Read Version 3.0 personality successfully loaded
+22604: 0.001: Usage: set $dir=<dir>         defaults to /home/workspace/gunhee/testMemp5m
+22604: 0.001:        set $filesize=<size>   defaults to 1073741824
+22604: 0.001:        set $iosize=<value>    defaults to 8192
+22604: 0.001:        set $nthreads=<value>  defaults to 1
+22604: 0.001:        set $workingset=<value>  defaults to 0
+22604: 0.001:        set $directio=<bool>   defaults to 0
+22604: 0.001:        run runtime (e.g. run 60)
+filebench> 22604: 0.001: Creating/pre-allocating files and filesets
+22604: 0.001: File largefile1: 1024.000MB
+22604: 0.003: Removed any existing file largefile1 in 1 seconds
+22604: 0.003: making tree for filset /home/workspace/gunhee/testMemp5m/largefile1
+22604: 0.003: Creating file largefile1...
+22604: 0.242: Preallocated 1 of 1 of file largefile1 in 1 seconds
+22604: 0.242: waiting for fileset pre-allocation to finish
+22609: 0.242: Starting 1 rand-read instances
+22610: 0.243: Starting 1 rand-thread threads
+22604: 1.244: Running...
+22604: 601.308: Run took 600 seconds...
+22604: 601.308: Per-Operation Breakdown
+rand-read1           17081112ops    28465ops/s 222.4mb/s      0.0ms/op       17us/op-cpu [0ms - 0ms]
+22604: 601.308: IO Summary: 17081112 ops, 28465.457 ops/s, (28465/0 r/w), 222.4mb/s,     35us cpu/op,   0.0ms latency
+22604: 601.308: Shutting down processes

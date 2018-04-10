@@ -1,0 +1,36 @@
+Filebench Version 1.4.9.1
+ 2972: 0.000: Allocated 170MB of shared memory
+filebench> filebench>  2972: 0.001: File-server Version 3.0 personality successfully loaded
+ 2972: 0.001: Usage: set $dir=<dir>
+ 2972: 0.001:        set $meanfilesize=<size>     defaults to 131072
+ 2972: 0.001:        set $nfiles=<value>      defaults to 100000
+ 2972: 0.001:        set $nthreads=<value>    defaults to 50
+ 2972: 0.001:        set $meanappendsize=<value>  defaults to 16384
+ 2972: 0.001:        set $iosize=<size>  defaults to 1048576
+ 2972: 0.001:        set $meandirwidth=<size> defaults to 20
+ 2972: 0.001:        run runtime (e.g. run 60)
+filebench>  2972: 0.001: Creating/pre-allocating files and filesets
+ 2972: 0.094: Fileset bigfileset: 100000 files, 0 leafdirs, avg dir width = 20, avg dir depth = 3.8, 12510.457MB
+ 2972: 0.096: Removed any existing fileset bigfileset in 1 seconds
+ 2972: 0.096: making tree for filset /home/workspace/gunhee/testMemp5m/bigfileset
+ 2972: 0.316: Creating fileset bigfileset...
+ 2972: 17.429: Preallocated 80075 of 100000 of fileset bigfileset in 18 seconds
+ 2972: 17.429: waiting for fileset pre-allocation to finish
+ 2979: 17.429: Starting 1 filereader instances
+ 2980: 17.430: Starting 50 filereaderthread threads
+ 2972: 18.505: Running...
+ 2972: 618.554: Run took 600 seconds...
+ 2972: 618.557: Per-Operation Breakdown
+statfile1            768957ops     1281ops/s   0.0mb/s      0.0ms/op     4511us/op-cpu [0ms - 7ms]
+deletefile1          768960ops     1281ops/s   0.0mb/s      0.1ms/op     4964us/op-cpu [0ms - 17ms]
+closefile3           768969ops     1282ops/s   0.0mb/s      0.0ms/op     4633us/op-cpu [0ms - 5ms]
+readfile1            768975ops     1282ops/s 169.0mb/s      0.1ms/op     5079us/op-cpu [0ms - 15ms]
+openfile2            768976ops     1282ops/s   0.0mb/s      0.3ms/op     5693us/op-cpu [0ms - 120ms]
+closefile2           768978ops     1282ops/s   0.0mb/s      0.0ms/op     4731us/op-cpu [0ms - 8ms]
+appendfilerand1      768979ops     1282ops/s  10.0mb/s      0.0ms/op     5076us/op-cpu [0ms - 19ms]
+openfile1            768981ops     1282ops/s   0.0mb/s      0.3ms/op     6123us/op-cpu [0ms - 121ms]
+closefile1           768988ops     1282ops/s   0.0mb/s      0.0ms/op     4993us/op-cpu [0ms - 5ms]
+wrtfile1             768990ops     1282ops/s 160.5mb/s      0.2ms/op     5899us/op-cpu [0ms - 19ms]
+createfile1          768997ops     1282ops/s   0.0mb/s      1.5ms/op    10591us/op-cpu [0ms - 121ms]
+ 2972: 618.557: IO Summary: 8458750 ops, 14096.765 ops/s, (1282/2563 r/w), 339.5mb/s,    861us cpu/op,   0.8ms latency
+ 2972: 618.557: Shutting down processes

@@ -1,0 +1,23 @@
+Filebench Version 1.4.9.1
+28295: 0.000: Allocated 170MB of shared memory
+filebench> filebench> 28295: 0.001: File-server Version 3.0 personality successfully loaded
+28295: 0.001: Usage: set $dir=<dir>
+28295: 0.001:        set $meanfilesize=<size>     defaults to 131072
+28295: 0.001:        set $nfiles=<value>      defaults to 100000
+28295: 0.001:        set $nthreads=<value>    defaults to 50
+28295: 0.001:        set $meanappendsize=<value>  defaults to 16384
+28295: 0.001:        set $iosize=<size>  defaults to 1048576
+28295: 0.001:        set $meandirwidth=<size> defaults to 20
+28295: 0.001:        run runtime (e.g. run 60)
+filebench> 28295: 0.001: Creating/pre-allocating files and filesets
+28295: 0.094: Fileset bigfileset: 100000 files, 0 leafdirs, avg dir width = 20, avg dir depth = 3.8, 12510.457MB
+28295: 0.096: Removed any existing fileset bigfileset in 1 seconds
+28295: 0.096: making tree for filset /home/workspace/gunhee/testMemp5m/bigfileset
+28295: 0.152: Creating fileset bigfileset...
+28295: 3.777: Preallocated 80075 of 100000 of fileset bigfileset in 4 seconds
+28295: 3.777: waiting for fileset pre-allocation to finish
+28299: 3.777: Starting 1 filereader instances
+28300: 3.778: Starting 50 filereaderthread threads
+28295: 4.852: Running...
+28295: 66.858: Run took 62 seconds...
+28295: 66.858: Shutting down processes

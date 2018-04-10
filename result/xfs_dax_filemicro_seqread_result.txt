@@ -1,0 +1,25 @@
+Filebench Version 1.4.9.1
+27176: 0.000: Allocated 170MB of shared memory
+filebench> filebench> 27176: 0.001: FileMicro-SeqRead Version 2.1 personality successfully loaded
+27176: 0.001: Usage: set $dir=<dir>
+27176: 0.001:        set $cached=<bool>    defaults to false
+27176: 0.001:        set $filesize=<size>  defaults to 1073741824
+27176: 0.001:        set $iosize=<size>    defaults to 1048576
+27176: 0.001:        set $nthreads=<value> defaults to 1
+27176: 0.001:  
+27176: 0.001:        run runtime (e.g. run 60)
+filebench> 27176: 0.001: Creating/pre-allocating files and filesets
+27176: 0.001: File largefile: 1024.000MB
+27176: 0.003: Removed any existing file largefile in 1 seconds
+27176: 0.003: making tree for filset /home/workspace/gunhee/testMemp5m/largefile
+27176: 0.003: Creating file largefile...
+27176: 2.193: Preallocated 1 of 1 of file largefile in 3 seconds
+27176: 2.193: waiting for fileset pre-allocation to finish
+27180: 2.194: Starting 1 filereader instances
+27181: 2.194: Starting 1 filereaderthread threads
+27176: 3.195: Running...
+27176: 603.256: Run took 600 seconds...
+27176: 603.256: Per-Operation Breakdown
+seqread-file         2823705ops     4706ops/s 4701.1mb/s      0.2ms/op      191us/op-cpu [0ms - 0ms]
+27176: 603.256: IO Summary: 2823705 ops, 4705.694 ops/s, (4706/0 r/w), 4701.1mb/s,    213us cpu/op,   0.2ms latency
+27176: 603.256: Shutting down processes
